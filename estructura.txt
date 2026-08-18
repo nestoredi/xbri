@@ -1,0 +1,16 @@
+neumaticos-web/
+├── index.html
+├── productos.html
+├── nosotros.html
+├── contacto.html
+├── styles/
+│   └── main.css
+├── scripts/
+│   ├── main.js
+│   └── productos.json
+└── imagenes/
+    ├── logo.png
+    ├── neumatico-auto.png
+    ├── neumatico-suv.png
+    ├── neumatico-camion.png
+    └── hero-bg.jpg

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos por Categoría — NC Neumáticos</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Top Header / Contact Bar -->
+  <div class="top-bar">
+    <div class="top-bar-info">
+      <span>📍 Montevideo</span>
+      <a href="tel:098612320">📞 098612320</a>
+      <a href="mailto:ncrossa29956@gmail.com">✉️ ncrossa29956@gmail.com</a>
+    </div>
+    <div class="social-links">
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://x.com" target="_blank" rel="noopener">X</a>
+    </div>
+  </div>
+
+  <!-- Navigation Bar & Logo -->
+  <header class="main-header">
+    <a href="index.html" class="logo-container">
+      <img src="imagenes/logo.png" alt="NC Neumáticos Logo">
+      <span class="logo-text">XBRI <span>Neumáticos</span></span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="productos.html" class="active">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Products Main Section -->
+  <section>
+    <h2 class="section-title">Catálogo de <span>Productos</span></h2>
+    
+    <!-- Filter Buttons -->
+    <div class="filters-bar">
+      <button class="filter-btn active" data-filter="todos">Todos</button>
+      <button class="filter-btn" data-filter="automovil">Automóvil</button>
+      <button class="filter-btn" data-filter="suv">SUV & 4x4</button>
+      <button class="filter-btn" data-filter="camion">Camión</button>
+    </div>
+
+    <!-- Dynamic Product Grid populated from JSON -->
+    <div class="products-grid" id="products-grid">
+      <!-- Los productos se cargan dinámicamente mediante JavaScript -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 NC Neumáticos. Todos los derechos reservados. Montevideo, Uruguay.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

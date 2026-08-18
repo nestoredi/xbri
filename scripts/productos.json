@@ -1,0 +1,84 @@
+{
+  "productos": [
+    {
+      "id": 5138,
+      "nombre": "XBRI 175/70R13 82T FASTWAY",
+      "categoria": "automovil",
+      "categoria_original": "PCR",
+      "medida": "175/70R13",
+      "precio": "$14.85",
+      "imagen": "imagenes/neumatico-auto.png",
+      "descripcion": "Neumático XBRI - 175/70R13 82T FASTWAY. Categoría: PCR."
+    },
+    {
+      "id": 6422,
+      "nombre": "XBRI 175/75R13 84T FASTWAY A5",
+      "categoria": "automovil",
+      "categoria_original": "PCR",
+      "medida": "175/75R13",
+      "precio": "$15.90",
+      "imagen": "imagenes/neumatico-auto.png",
+      "descripcion": "Neumático XBRI - 175/75R13 84T FASTWAY A5. Categoría: PCR."
+    },
+    {
+      "id": 3934,
+      "nombre": "XBRI 175/65R14 82H FASTWAY A3",
+      "categoria": "automovil",
+      "categoria_original": "PCR",
+      "medida": "175/65R14",
+      "precio": "$14.91",
+      "imagen": "imagenes/neumatico-auto.png",
+      "descripcion": "Neumático XBRI - 175/65R14 82H FASTWAY A3. Categoría: PCR."
+    },
+    {
+      "id": 7064,
+      "nombre": "XBRI 175/70R14 84T FASTWAY A4",
+      "categoria": "automovil",
+      "categoria_original": "PCR",
+      "medida": "175/70R14",
+      "precio": "$15.65",
+      "imagen": "imagenes/neumatico-auto.png",
+      "descripcion": "Neumático XBRI - 175/70R14 84T FASTWAY A4. Categoría: PCR."
+    },
+    {
+      "id": 5479,
+      "nombre": "XBRI 175/75R14 86T FASTWAY A5",
+      "categoria": "automovil",
+      "categoria_original": "PCR",
+      "medida": "175/75R14",
+      "precio": "$16.95",
+      "imagen": "imagenes/neumatico-auto.png",
+      "descripcion": "Neumático XBRI - 175/75R14 86T FASTWAY A5. Categoría: PCR."
+    },
+    {
+      "id": 17587,
+      "nombre": "XBRI 185/60R14 82H FASTWAY A2",
+      "categoria": "automovil",
+      "categoria_original": "PCR",
+      "medida": "185/60R14",
+      "precio": "$15.95",
+      "imagen": "imagenes/neumatico-auto.png",
+      "descripcion": "Neumático XBRI - 185/60R14 82H FASTWAY A2. Categoría: PCR."
+    },
+    {
+      "id": 5939,
+      "nombre": "XBRI 175/75R13 84T FORZA A/T 2",
+      "categoria": "suv",
+      "categoria_original": "PCR",
+      "medida": "175/75R13",
+      "precio": "$17.39",
+      "imagen": "imagenes/neumatico-suv.png",
+      "descripcion": "Neumático XBRI - 175/75R13 84T FORZA A/T 2. Categoría: PCR."
+    },
+    {
+      "id": 20211,
+      "nombre": "XBRI 215/75R17.5 135/133J XCARGO S2",
+      "categoria": "camion",
+      "categoria_original": "TBR",
+      "medida": "215/75R17.5",
+      "precio": "$85.00",
+      "imagen": "imagenes/neumatico-camion.png",
+      "descripcion": "Neumático XBRI - 215/75R17.5 135/133J XCARGO S2. Categoría: TBR."
+    }
+  ]
+}
