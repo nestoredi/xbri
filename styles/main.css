@@ -150,118 +150,149 @@ body {
   transform: translateY(-2px);
 }
 
-/* 3D Tire Carousel Section */
-.hero-carousel {
+/* ===================================================
+   CARRUSEL 3D CENTRAL - TIOVIVO / CALESITA
+   =================================================== */
+.hero-carousel-3d {
   position: relative;
-  height: 80vh;
-  min-height: 500px;
+  min-height: 85vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at center, #1a1a1a 0%, var(--bg-primary) 100%);
+  background: radial-gradient(circle at center, #1e1e1e 0%, var(--bg-primary) 100%);
+  padding: 40px 20px;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
+  text-align: center;
 }
 
-.carousel-slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
-}
-
-.carousel-slide.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.carousel-content {
-  max-width: 500px;
+.carousel-title-container {
+  max-width: 650px;
+  margin-bottom: 20px;
   z-index: 2;
 }
 
-.carousel-content h1 {
-  font-size: 3rem;
+.carousel-title-container h1 {
+  font-size: 2.8rem;
   font-weight: 900;
-  margin-bottom: 15px;
-  line-height: 1.1;
   text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 10px;
 }
 
-.carousel-content h1 span {
+.carousel-title-container h1 span {
   color: var(--accent);
 }
 
-.carousel-content p {
+.carousel-title-container p {
   color: var(--text-secondary);
-  font-size: 1.1rem;
-  margin-bottom: 25px;
+  font-size: 1.05rem;
 }
 
-/* CSS 3D Rotating Tire Stage */
-.tire-3d-stage {
+/* Stage y Esfera 3D */
+.carousel-3d-stage {
+  width: 100%;
+  max-width: 800px;
+  height: 380px;
   perspective: 1000px;
-  width: 350px;
-  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px 0;
 }
 
-.rotating-tire-container {
-  width: 280px;
-  height: 280px;
+.carousel-3d-spinner {
   position: relative;
+  width: 200px;
+  height: 220px;
   transform-style: preserve-3d;
-  animation: rotateTire 12s linear infinite;
+  animation: spinCarousel 16s infinite linear;
 }
 
-.rotating-tire-container img {
-  width: 100%;
-  height: 100%;
+/* Pausar la calesita al pasar el mouse */
+.carousel-3d-spinner:hover {
+  animation-play-state: paused;
+}
+
+/* Cada una de las 4 cubiertas dispuestas a 90deg */
+.carousel-3d-item {
+  position: absolute;
+  width: 200px;
+  height: 220px;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(calc(var(--i) * 90deg)) translateZ(280px);
+  transition: transform 0.3s ease;
+}
+
+.carousel-3d-item img {
+  width: 180px;
+  height: 180px;
   object-fit: contain;
-  filter: drop-shadow(0 20px 30px rgba(255, 85, 0, 0.2));
+  filter: drop-shadow(0 15px 25px rgba(255, 85, 0, 0.3));
+  transition: transform 0.3s ease;
 }
 
-@keyframes rotateTire {
+.carousel-3d-item:hover img {
+  transform: scale(1.1);
+}
+
+.item-label {
+  margin-top: 10px;
+  background-color: rgba(30, 30, 30, 0.85);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+  backdrop-filter: blur(4px);
+}
+
+.btn-hero {
+  margin-top: 20px;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(255, 85, 0, 0.4);
+}
+
+/* Animación de Rotación Calesita */
+@keyframes spinCarousel {
   0% {
     transform: rotateY(0deg);
   }
   100% {
-    transform: rotateY(360deg);
+    transform: rotateY(-360deg);
   }
 }
 
-/* Carousel Controls */
-.carousel-nav {
-  position: absolute;
-  bottom: 30px;
-  display: flex;
-  gap: 15px;
-  z-index: 10;
+/* Adaptación para pantallas móviles */
+@media (max-width: 768px) {
+  .carousel-title-container h1 {
+    font-size: 2rem;
+  }
+  .carousel-3d-stage {
+    height: 300px;
+  }
+  .carousel-3d-spinner {
+    width: 150px;
+    height: 170px;
+  }
+  .carousel-3d-item {
+    width: 150px;
+    height: 170px;
+    transform: rotateY(calc(var(--i) * 90deg)) translateZ(190px);
+  }
+  .carousel-3d-item img {
+    width: 130px;
+    height: 130px;
+  }
 }
-
-.carousel-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: var(--border);
-  border: none;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.carousel-dot.active {
-  background-color: var(--accent);
-  transform: scale(1.2);
-}
-
 /* Sections General */
 section {
   padding: 80px 8%;
